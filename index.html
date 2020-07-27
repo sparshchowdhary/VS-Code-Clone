@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>VS Code Prototype</title>
+        <link rel="stylesheet" href="./node_modules/xterm/css/xterm.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+        <link rel="stylesheet" href="./node_modules/jquery-ui-dist/jquery-ui.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="container" class="container">
+           <div id="nav-bar" class="nav-bar">
+               <div class="btn-container">
+                   <div id="new" class="btn new">New</div>
+                   <div id="save" class="btn save">Save</div>
+                   <div id="open" class="btn open">Open</div>
+               </div>
+               <div id="tabs" class="tabs-container">
+                   <ul></ul>
+               </div>
+           </div>
+           <div id="main-window" class="main-window">
+               <div id="explorer" class="explorer">
+                   <div id="tree-view" class="tree-view"></div>
+               </div>
+               <div id="editor-terminal" class="editor-terminal">
+                   <div id="editor" class="editor"></div>
+                   <div id="terminal" class="terminal"></div>
+               </div>
+           </div>
+        </div>
+    </body>
+    <script src="./index.js"></script>
+    <script src="./node_modules/xterm/lib/xterm.js"></script> 
+</html>
